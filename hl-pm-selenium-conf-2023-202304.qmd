@@ -1,0 +1,221 @@
+---
+title: "Selenium Conf 2023 Recap"
+author: "Derrick Kearney"
+format:
+  revealjs:
+    smaller: true
+    scrollable: true
+    slide-number: true
+    chalkboard:
+      buttons: false
+    css: styles.css
+engine: knitr
+---
+
+### Missed Opportunities: <br/>When Quality is Put In a Box {.slide-header}
+
+::: {.notes}
+
+:::
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {.video-info}
+Speaker: *Erika Chestnut*
+<br/>
+[https://youtu.be/QkrV1WgsDXc](https://youtu.be/QkrV1WgsDXc)
+:::
+
+![](images/erika_chestnut_missed_oppportunities_2_20230411.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+- Poor quality is a succession of missed opportunities
+- Describes action based quality mantras you can use to "Lead with Quality"
+  - Claim the missed opportunity
+  - Cross the aisle to build partnerships
+  - Defining quality clearly
+- A process creates consistency that results in quality
+- Strive for consistency, avoid chaos
+- Customer Journey Diagrams
+:::
+
+::::
+
+---
+
+### What’s New and Good in Selenium {.slide-header}
+
+::: {.notes}
+- DesiredCapabilities replaced by Options
+- Wait timeouts changed to Durations
+- Scrolling changed in chromium browsers, scrolling to and from elements, scrolling from viewport
+- New functions for
+  - interacting with new tabs and windows
+  - interacting with Shadow DOM in chromium based browsers
+  - taking screenshots of elements and full web pages.
+- Relative locators for locating elements above, below, to the left and right of another element.
+- Selenium Manager, takes care of downloading drivers automatically for browsers, similar to Cypress and Playwright
+- Bidirectional communication (BiDi) with web browser.
+  - BiDi/CDP still around, being deprecated by new W3C standards
+- Virtual Authenticator - supports passwordless, public-key authentication, think 2 factor auth
+- Full list of features on website: https://www.selenium.dev
+:::
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {.video-info}
+Speaker: *Corina-Adina Pip*
+<br/>
+[https://youtu.be/YeeiG_KYvU4](https://youtu.be/YeeiG_KYvU4)
+:::
+
+![](images/corina_pip_good_new_in_selenium_2_20230411.png){fig-align="center"}
+:::
+
+::: {.column width="50%" .scrollable}
+- DesiredCapabilities replaced by Options
+- Wait timeouts changed to Durations
+- Scrolling changed in chromium browsers, scrolling to and from elements, scrolling from viewport
+- New functions for tabs/windows, Shadow DOM, screenshots of elements
+- Relative locators
+- Selenium Manager (automatic download of drivers)
+- Bidirectional communication (BiDi) with web browser.
+  - BiDi/CDP still around, being deprecated by new W3C standards
+- Virtual Authenticator - supports passwordless, public-key authentication, think 2 factor auth
+:::
+
+::::
+
+---
+
+### Why Browser Engines ≠ Real Desktop Browsers ≠ Mobile Browsers {.slide-header}
+
+::: {.notes}
+- Important to understand the risks associated with the types of web browsers used for testing.
+- Talks about the use of specifications
+  - RFC2119 - covers terminology
+  - WebDriver Spec - [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
+- Differences between headless and headful web browsers.
+- Differences between browser engines vs real browsers.
+:::
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {.video-info}
+Speaker: *David Burns*
+<br/>
+[https://youtu.be/Mo6LmFGrtxY](https://youtu.be/Mo6LmFGrtxY)
+:::
+
+![](images/david_burns_browsers_not_same_2_20230411.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+- Important to understand the risks associated with the types of web browsers used for testing.
+- Talks about the use of specifications
+  - RFC2119 - covers terminology
+  - WebDriver Spec - [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
+- Differences between headless and headful web browsers.
+- Differences between browser engines vs real browsers.
+:::
+
+::::
+
+---
+
+### Building Quality Gates and Automated Decisions in CI/CD Pipelines {.slide-header}
+
+::: {.notes}
+* Quality gates - checkpoint where a project's quality is assessed.
+* We have quality gates, it is us, if your team has a dashboard, it may involve looking at the dashboard,-
+* benefits: early identification of issues, communication, risk management, informed decision manking
+* around 6 minutes - take screen shot
+* Lays out a roadmap for how to automate the decision making
+* uses Report Portal - test automation dashboard
+* nice demo of report portal
+* I like report portal for collecting test result reports because it works across test runners and programming languages.
+* I started putting together a report portal server for shiny server pro test cases last summer.
+* If you are interested in setting up something like this, let me know and we can work on it together.
+* screenshot around 34 minutes, what a quality gate's criteria looks like.
+:::
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {.video-info}
+Speaker: *Dmitriy Gumeniuk*
+<br/>
+[https://youtu.be/At5MEWqf_TI](https://youtu.be/At5MEWqf_TI)
+:::
+<!-- .video-info -->
+
+![](images/dmitriy_gumeniuk_quality_gates_2_20230411.png){fig-align="center"}
+
+![](images/dmitriy_gumeniuk_quality_gates_3_20230411.png){fig-align="center"}
+
+:::
+<!-- .column -->
+
+::: {.column width="50%"}
+- Quality gates - checkpoint where a project's quality is assessed.
+- Benefits:
+   - early identification of issues
+   - communication
+   - risk management
+   - informed decision manking
+- Lays out a roadmap for how to automate the decision making
+- Uses Report Portal - test automation dashboard
+:::
+<!-- .column -->
+
+:::: 
+<!-- .columns -->
+
+---
+
+### Other videos to check out {.slide-header}
+
+::: {.notes}
+:::
+
+:::: {.columns}
+
+::: {.column width="33%"}
+
+**Selenium: State of the Union**
+<br/>
+Speaker: *Diego Molina*
+
+![](images/diego_molina_state_of_selenium_2_20230411.png){fig-align="center"}
+[https://youtu.be/nT9kzY-q2WA](https://youtu.be/nT9kzY-q2WA)
+:::
+
+::: {.column width="33%"}
+
+**Evolve Your Selenium Scripts Into Performance Scripts**
+<br/>
+Speaker: *Roger Abelenda*
+
+![](images/roger_abelenda_performance_scripts_2_20230411.png){fig-align="center"}
+[https://youtu.be/YZhCPXfMuqo](https://youtu.be/YZhCPXfMuqo)
+:::
+
+::: {.column width="33%"}
+
+**Metrics to Make Your Quality Practices Effective**
+<br/>
+Speaker: *Anand Bagmar*
+
+![](images/anand_bagmar_metrics_2_20230411.png){fig-align="center"}
+[https://youtu.be/K8Kcax1NcUU](https://youtu.be/K8Kcax1NcUU)
+:::
+
+::::

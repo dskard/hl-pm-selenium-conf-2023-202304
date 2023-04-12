@@ -1,0 +1,24 @@
+
+.image-center {
+  display: block;
+  margin: auto;
+}
+
+.border-shown {
+  border: 3px solid black;
+}
+
+.slide-header {
+  text-align: center;
+}
+
+.video-info {
+  text-align: center;
+}
+
+.reveal section p {
+  display: inline-block;
+  font-size: 0.9em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
